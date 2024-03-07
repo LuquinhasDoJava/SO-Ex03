@@ -17,14 +17,12 @@ public class DistroController {
 				BufferedReader br = new BufferedReader(isr);
 				String line = br.readLine();
 				while (line != null) {
-					if(line.contains("NAME")) {
-						if(!line.contains("PRETTY_NAME")) {
+					if(line.contains("NAME=")) {
 							System.out.println(line);
-						}
 					}
-					if(line.contains("VERSION")) {
-						if(!line.contains("VERSION_ID")) {
+					if(line.contains("VERSION=")) {
 							System.out.println(line);
+							break;
 						}
 					}
 					line = br.readLine();
