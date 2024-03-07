@@ -24,7 +24,6 @@ public class DistroController {
 							System.out.println(line);
 							break;
 						}
-					}
 					line = br.readLine();
 				}
 				is.close();
